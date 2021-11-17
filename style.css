@@ -1,0 +1,15 @@
+
+#bg1-success{ color: black;}
+
+.nav.navbar-nav.navbar-right li a {
+    color: blue;
+}
+.nav.nav.navbar-navbar-expand-md {
+    color: white;
+}
+.row {
+    text-align: center;
+}
+.col-md-1 {
+    display:inline-block;
+}

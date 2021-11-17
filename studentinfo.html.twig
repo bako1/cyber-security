@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous">
+    <title> {{"Grading App"}}</title>
+</head>
+
+<body class="bg-light">
+   
+     <div class="card">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table  table-success table-hover table-striped ">
+                  {% for member in studinfo %}
+                    <caption>
+                       <strong>Student grade manegement system</strong> -<em> {{member.name}}</em>
+                    </caption>
+                   
+                    <thead >
+                        <tr>
+                            <th>Name</th>
+                            <th>score</th>
+                            <th>Grade</th>
+                    
+                         </tr>
+                    </thead>
+                    
+                    <tbody >
+                   
+                     
+                      {% set id = member.id %}
+                        <tr>
+                            <td ><strong>{{member.name}}<strong></td>
+                            <td >{{member.score}}</td>
+                             <td >{{member.grade}}</td>
+                          <!--    <td>
+                             <div class="row">
+                         <form action="./process.php" method="post">
+                                <div class="col-sm-6">  
+                                    <button class="btn btn-light btn-sm"><a href="./process.php?editid={{id}}">edit<a/></button>
+                                    </div>
+                              </form>
+                            </td>-->
+                          
+                       <!--    <td>
+                             
+                             <form action="./process.php" method="post">
+                                <div class="row">
+                                <div class="col-sm-6">  
+                                    <button class="btn btn-light text-light btn-sm"><a href="./process.php?edit={{id}}">edit<a/></button>
+                                    </div>
+                                   
+                                 </div>
+                            </form>
+                            
+                           </td>-->
+                        {% endfor %}
+                    </tbody>
+    </div>
+    </div>
+    </div>
+    </table>
+    </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-light">
+    <div class="container" style="justify-content: center;">
+        <div class="row">
+            <div class="col-lg-6 m-auto mt-5">
+                <div class="card bg-light" style="text-align: center;">
+                   
+                <div class="card-body">
+                    <label ><h6>Sing Up for the course <em>IIKG1001</h6></em> </label>
+                    <form action="./signup.php" method="post">
+                        <input type="text" name="fullname" placeholder="Full name" class="form-control mb-3"/>
+                        <input type="email" name="email" placeholder="E-mail" class="form-control mb-3"/>
+                        <input type="number"min="0" max="9999" name="stidId" placeholder="Student ID" class="form-control mb-3" />
+                        <input type="password" name="password1" placeholder="password" class="form-control mb-3"/>
+                        <input type="password" name="password2" placeholder="repeate password" class="form-control mb-3" />
+                        
+                       <!-- <button class="btn  btn-success mt-3" name="Login">signup</button>-->
+                     <div class="d-grid">
+                       <button  class="btn btn-primary btn-block" name="signup">Sign up</button>
+                   </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
